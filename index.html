@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educação Digital Unificada - EDU</title>
+    <!-- Link do arquivo de variáveis de cores -->
+    <link rel="stylesheet" href="css/colors.css">
+    <!-- Link do arquivo de estilos principais -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho / Navbar -->
+    <header>
+        <div class="logo">
+            <img src="images/logo_edu.png" alt="Logo EDU">
+            <h1>Edu</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Cursos</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="actions">
+            <input type="search" placeholder="Pesquisar">
+            <button>Pesquisar</button>
+            <a href="#">Entrar</a>
+            <a href="#">Cadastrar</a>
+        </div>
+    </header>
+
+    <!-- Seção Principal com o Carrossel -->
+    <section class="hero">
+        <div class="hero-content">
+            <!-- Carrossel de Imagens -->
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/img_testes/home_teste1.jpg" alt="Imagem 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/img_testes/home_teste2.jpg" alt="Imagem 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/img_testes/home_teste3.jpg" alt="Imagem 3">
+                    </div>
+                </div>
+                <!-- Botões de navegação -->
+                <button class="carousel-control prev" onclick="prevSlide()">&#10094;</button>
+                <button class="carousel-control next" onclick="nextSlide()">&#10095;</button>
+            </div>
+
+            <!-- Texto Hero -->
+            <div class="hero-text">
+                <button>Saiba mais</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Script JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>

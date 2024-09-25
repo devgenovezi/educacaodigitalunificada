@@ -1,0 +1,11 @@
+/* colors.css */
+:root {
+    --primary-color: #003366; /* Azul Médio 004C99*/
+    --secondary-color: #003366; /* Azul Escuro */
+    --accent-color: #0066CC; /* Azul Claro */
+    --highlight-color: #99DDAE; /* Verde Menta */
+    --light-gray: #D0D0D0; /* Cinza Claro */
+    --dark-gray: #333333; /* Cinza Escuro */
+    --white: #ffffff;
+    --black: #000000;
+}
