@@ -10,3 +10,6 @@
 
 /*about's css*/
 @import './pages/about/';
+
+/*login's css*/
+@import './pages/login/login.css';
