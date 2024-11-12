@@ -1,6 +1,6 @@
 .navbar {
     position: fixed;
-    top: 0;
+    top: -2rem;
     left: 0;
     width: 100%;
     z-index: 10;
@@ -60,7 +60,7 @@
   */
   
   .navbar__links{
-    margin-top: 2rem;
+    margin-top: 1.35rem;
   }
   
   .navbar .navbar__content {
@@ -93,6 +93,12 @@
   .navbar .navbar__content .navbar__mobile,
   .navbar .navbar__content .navbar__mobile .mobile__links {
     display: none;
+  }
+
+  .logo_edu {
+    width: 8rem;
+    height: auto;
+    margin-top: 0.5rem;
   }
   
   @media only screen and (max-width: 1000px) {

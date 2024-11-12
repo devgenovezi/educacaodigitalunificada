@@ -1,0 +1,62 @@
+#ecossistema-edu {
+    background-color: #e7eff7; /* Cor de fundo clara */
+    padding: 50px 20px;
+  }
+  
+  .container-ecosystem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+  }
+  
+  .ecosystem-text {
+    flex: 1;
+    max-width: 600px;
+  }
+  
+  .ecosystem-text h2 {
+    font-size: var(--heading-font-size);
+    font-weight: bold;
+    color: var(--title);
+  }
+  
+  .ecosystem-text p {
+    font-size: var(--paragraph-font-size);
+    line-height: 1.6;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+  }
+  
+  .ecosystem-text .highlight {
+    color: var(--light-green-shadow);
+    font-weight: 300;
+    letter-spacing: 0.05em;
+  }
+  
+  .ecosystem-image {
+    flex: 1;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  .ecosystem-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .container-ecosystem {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .ecosystem-image {
+      margin-top: 20px;
+    }
+  }
+  
