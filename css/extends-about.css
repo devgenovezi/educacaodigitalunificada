@@ -1,0 +1,150 @@
+/*about's css*/
+@import './pages/about/about.css';
+@import './pages/about/header.css';
+
+  /* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  /* Estrutura Geral */
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  section {
+    padding: 50px 20px;
+    margin-bottom: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Títulos de Seções */
+  .section-title {
+    font-size: 2rem;
+    text-align: center;
+    color: #002f5f;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .section-description {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #555;
+    margin-top: 10px;
+    line-height: 1.8;
+  }
+  
+  /* Motivação */
+  .motivation-section {
+    background-color: #eaf3fc;
+  }
+  
+  /* Propostas */
+  .proposals-section {
+    background: linear-gradient(to bottom, #ffffff, #004f93);
+    color: white;
+  }
+  
+  .proposal-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 600px;
+  }
+  
+  .proposal-list li {
+    margin: 15px 0;
+    font-size: 1.2rem;
+    text-align: left;
+    padding-left: 20px;
+    position: relative;
+  }
+  
+  .proposal-list li::before {
+    content: "•";
+    color: #ffd700;
+    font-size: 1.5rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  
+  /* Equipe */
+  .team-section {
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .team-members {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  .team-member {
+    max-width: 250px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .member-photo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover;
+    border: 2px solid #004f93;
+  }
+  
+  .member-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  .member-description {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.5;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .team-members {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .proposal-list {
+      font-size: 1rem;
+    }
+  
+    .section-title {
+      font-size: 1.8rem;
+    }
+  
+    .section-description {
+      font-size: 1rem;
+    }
+  }
+  

@@ -1,0 +1,86 @@
+#carousel {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Ajuste conforme necessário */
+    overflow: hidden;
+    margin-top: 5rem; /* Reduz a distância entre o carrossel e o header */
+  }
+   
+  .carousel-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-slide {
+    min-width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  
+  #carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .desktop-img {
+    display: none;
+  }
+  
+  .mobile-img {
+    display: block;
+  }
+  
+  /* Botões "Anterior" e "Próxima" */
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 2rem;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 100;
+    transition: opacity 0.3s ease;
+  }
+  
+  .prev:hover, .next:hover {
+    opacity: 0.8; /* Efeito hover */
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+  
+  /* Botão "Saiba Mais" */
+  .btn-saiba-mais {
+    position: absolute;
+    bottom: 12rem;
+    right: 10rem;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+    z-index: 100;
+  }
+  
+  /* Responsividade */
+  @media (min-width: 768px) {
+    .desktop-img {
+      display: block;
+    }
+  
+    .mobile-img {
+      display: none;
+  }
+  }
+  
