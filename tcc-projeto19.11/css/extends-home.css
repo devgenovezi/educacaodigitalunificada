@@ -1,9 +1,0 @@
-@import './variables.css';
-@import './globals.css';
-
-/*homepage's css*/
-@import './pages/homepage/header.css';
-@import './pages/homepage/slides.css';
-@import './pages/homepage/eco.css';
-@import './pages/homepage/pilares.css';
-@import './pages/homepage/depoimentos.css';
