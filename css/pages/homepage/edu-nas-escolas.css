@@ -1,0 +1,74 @@
+#edu-nas-escolas {
+    padding: 40px;
+    background-color: #f8f8f8;
+    color: #333;
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .pesquisa-campo {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .pesquisa-campo h3 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+  
+  .pesquisa {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 25px; /* Aumentado para dar mais espaço no interior */
+    width: 32%; /* Aumentado para que fiquem um pouco maiores */
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+  }
+  
+  .pesquisa:hover {
+    transform: scale(1.05);
+  }
+  
+  .pesquisa h3 {
+    font-size: 1.2rem;
+    color: #3498db;
+    margin-bottom: 15px;
+  }
+  
+  .pesquisa p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  .pesquisa span {
+    font-size: 1rem;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .pesquisa {
+      width: 48%; /* Ajuste para um pouco mais de espaço em telas médias */
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .pesquisa {
+      width: 100%; /* Em telas pequenas, um card por linha */
+      margin-bottom: 20px;
+    }
+  
+    .pesquisa-campo {
+      display: block;
+    }
+  }

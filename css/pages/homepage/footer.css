@@ -1,0 +1,100 @@
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 50px;
+    text-align: center;
+    position: relative;
+    width: 100%;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  .footer-left {
+    text-align: left;
+    flex: 1;
+  }
+  
+  .footer-left p {
+    margin-bottom: 10px;
+  }
+  
+  .footer-left .image-bottom {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  
+  
+  .footer-right {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    text-align: left;
+  }
+  
+  .footer-ul-container {
+    display: flex; /* Usando flex para colocar as listas lado a lado */
+    justify-content: space-between; /* Espaço entre as duas listas */
+    width: 100%;
+  }
+  
+  .footer-right ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 45%; /* Ajusta a largura das listas */
+  }
+  
+  .footer-right ul li {
+    margin: 5px 0;
+  }
+  
+  .footer-right ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer-right ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  
+  footer img {
+    margin-top: 20px;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  footer p {
+    margin-top: 20px;
+    font-size: 0.9rem;
+  }
+  
+  .footer-bottom {
+    display: flex;
+    align-items: center; /* Alinha a imagem e o texto no meio verticalmente */
+    justify-content: center; /* Centraliza o conteúdo no eixo horizontal */
+    margin-top: 20px;
+  }
+  
+  .footer-bottom img {
+    margin-right: 15px; /* Espaço entre a imagem e o texto */
+    max-width: 50px; /* Ajuste o tamanho da imagem conforme necessário */
+    height: auto;
+  }
+  
+  .footer-bottom p {
+    font-size: 1rem;
+    margin: 0; /* Remove a margem para evitar espaçamento indesejado */
+  }
+  
