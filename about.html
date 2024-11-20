@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title> Página - Sobre | EDU</title>
+
+    <!-- icone da barra de nav -->
+    <link rel="icon" href="assets/logo_flor.svg" type="image/x-icon" />
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;700;800&display=swap" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;800&display=swap" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" />
@@ -11,19 +15,46 @@
   </head>
   <body>
     <!-- Cabeçalho -->
-    <header>
-      <div class="main-header">
-        <img class="logo-edu" src="logo.png" alt="Logo da EDU" />
-        <nav>
-          <ul class="main-menu">
-            <li><a href="#cadastrar" class="register">Cadastrar</a></li>
-            <li><a href="#contato" class="contact">Contato</a></li>
-            <li><a href="#login" class="login">Entrar</a></li>
-            <li><a href="#cursos" class="courses">Cursos</a></li>
-            <li><a href="#sobre" class="about">Sobre</a></li>
+    <header id="header" class="max-width">
+      <nav class="navbar">
+        <div class="navbar__content max-width mb-0">
+          <div class="navbar__logo">
+            <img class="logo_edu" src="assets/about/logo_edu_white.svg" alt="Logo" />
+          </div>
+          <ul class="navbar__links">
+            <li><a class="ancors" href="about.html">Sobre</a></li>
+            <li><a class="ancors" href="#courses">Cursos</a></li>
+            <li><a class="ancors" href="#skills">Contato</a></li>
+            <li
+              style="
+                font-size: 2.5rem;
+                cursor: default;
+                z-index: 10;
+                font-weight: 100;
+              "
+            >
+              |
+            </li>
+            <li>
+              <div class="actions">
+                <input type="search" placeholder="Pesquisar" />
+                <button>Pesquisar</button>
+                <a href="cadastro.html" class="ancors__login">Entrar</a>
+                <a href="cadastro.html" class="ancors__login">Cadastrar</a>
+              </div>
+            </li>
           </ul>
-        </nav>
-      </div>
+
+          <div class="navbar__mobile">
+            <img src="assets/menu.svg" alt="menu" class="burguer" />
+            <ul class="mobile__links">
+              <li><a class="ancors" href="about.html">Sobre</a></li>
+              <li><a class="ancors" href="#">Cursos</a></li>
+              <li><a class="ancors" href="#">Contato</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
   
     <!-- Banner -->

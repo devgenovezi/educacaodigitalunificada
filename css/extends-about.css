@@ -1,3 +1,6 @@
+@import './variables.css';
+@import './globals.css';
+
 /*about's css*/
 @import './pages/about/about.css';
 @import './pages/about/header.css';
