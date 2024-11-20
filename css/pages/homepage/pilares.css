@@ -1,78 +1,130 @@
+/* Estilos Específicos para a Introdução */
+.pilares .pilares-introducao {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.pilares .pilares-introducao__titulo {
+  font-family: var(--title-font);
+  font-weight: 700;
+  font-size: 1.8rem; /* Tamanho menor */
+  color: #20C7A3; /* Tom de verde mais suave */
+  margin-bottom: 0.5rem;
+}
+
+.pilares .pilares-introducao__subtitulo {
+  font-family: var(--title-font);
+  font-weight: 700;
+  font-size: 2.5rem; /* Tamanho ajustado */
+  color: var(--dark-primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.pilares .pilares-introducao__descricao {
+  font-size: 1.2rem; /* Tamanho menor */
+  color: var(--text-color);
+  max-width: 56rem;
+  margin: 0;
+}
+
+/* Estilos Gerais da Seção */
 .pilares {
-    h2 {
-      font-family: var(--title-font);
-      font-weight: 700;
-      font-size: var(--heading-font-size);
-      color: red;
-      position: relative;
-    }
-  }
+  background-color: var(--light-tertiary-color);
+  scroll-margin-top: 15rem;
+  width: 100%;
   
-  .pilares {
-    background-color: var(--light-tertiary-color);
-    scroll-margin-top: 15rem;
-    width: 100%;
-  }
-  
-  .banner-pilares {
-    width: 100%;
-    height: auto;
-  }
-  
-  .pilares .pilares__content {
-    padding: 6rem 4rem;
+
+}
+
+.banner-pilares {
+  width: 100%;
+  height: auto;
+}
+
+.pilares .pilares__content {
+  padding: 6rem 4rem;
     text-align: center;
-  
-  }
-  
-  .pilares .pilares__content .description {
-    max-width: 56rem;
-    margin: 0 auto 6rem;
-  }
-  
-  .pilares .pilares__content ul {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
-    gap: 4rem;
     position: relative;
-  }
-  
-  .pilares .pilares__content ul li {
-    background-color: var(--white);
-    background: linear-gradient(135deg, var(--white), rgba(0, 0, 0, 0.5));
-    backdrop-filter: blur(10px);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 15px;
-    overflow: hidden;
-    color: white;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  
-  .pilares .pilares__content ul li .image-container {
-    background-color: var(--white);
-    padding: 2rem;
-    border-radius: 50%;
-    width: 7rem;
-    height: 7rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.1);
-    margin: 0 auto;
-  }
-  
-  .pilares .pilares__content ul li h3 {
-    font-size: 1.6rem;
-    font-weight: 500;
-    margin: 2rem 0 1rem;
-  }
-  
-  .pilares__item:hover img {
-    transform: rotate(360deg);
-    transition: transform 0.5s ease-in-out;
-  }
+    /*background-image: url("../../../assets/pilares/banner.png"); /* Caminho atualizado */
+   /* background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;*/
+   
+}
+
+.pilares .pilares__content h2 {
+  font-family: var(--title-font);
+  font-weight: 700;
+  font-size: var(--heading-font-size);
+  color: red;
+  position: relative;
+  top: -20rem; 
+  padding-bottom: 50px;
+}
+
+.pilares .pilares__content .description {
+  max-width: 56rem;
+  margin: 0 auto 6rem;
+}
+
+.pilares .pilares__content ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  gap: 4rem;
+  position: relative;
+}
+
+.pilares .pilares__content ul li {
+  background-color: var(--white); 
+  background: linear-gradient(224deg, #46e191, #7ef9f1);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  overflow: hidden;
+  color: white;
+  padding: 20px 10px 20px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.pilares .pilares__content ul li .image-container {
+  background-color: var(--white);
+  padding: 1rem;
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+}
+
+.pilares .pilares__content ul li h3 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin: 2rem 0 1rem;
+}
+
+.pilares__item:hover img {
+  transform: rotate(360deg);
+  transition: transform 0.5s ease-in-out;
+}
+
+/* deu errado isso aqui
+.pilares .pilares__content::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80%; /* Ajuste para controlar a área de cobertura da imagem *
+  background: url("banner_pilares.svg") no-repeat center;
+  background-size: cover;
+  z-index: -1; /* Para ficar atrás do conteúdo *
+}
+  */

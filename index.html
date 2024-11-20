@@ -135,13 +135,17 @@
       </section>
 
       <section id="pilares" class="pilares">
-        <img
-          src="assets/pilares/banner.png"
-          alt="Banner-Pilares_Edu"
-          class="banner-pilares"
-        />
+        
         <div class="pilares__content max-width">
-          <h2>PILARES EDU</h2>
+          
+          <!-- Introdução com Estilos Específicos -->
+          <div class="pilares-introducao">
+            <h3 class="pilares-introducao__titulo">PILARES EDU</h3>
+            <h1 class="pilares-introducao__subtitulo">Visando o futuro</h1>
+            <p class="pilares-introducao__descricao">Construindo o Amanhã: Nossos Fundamentos em Inovação, Conexão, Inteligência e Eficiência</p>
+          </div>
+          
+          <!-- Seção de Cards Existente -->
           <ul>
             <li class="pilares__item">
               <div class="image-container">
@@ -155,6 +159,7 @@
                 pessoa possa alcançar seu máximo potencial.
               </p>
             </li>
+            
             <li class="pilares__item">
               <div class="image-container">
                 <img src="assets/pilares/tecnology.svg" alt="Icon - Tecnologia" />
@@ -167,7 +172,7 @@
                 pessoa possa alcançar seu máximo potencial.
               </p>
             </li>
-
+    
             <li class="pilares__item">
               <div class="image-container">
                 <img src="assets/pilares/ino.svg" alt="Icon - Inovação" />
@@ -180,6 +185,7 @@
                 pessoa possa alcançar seu máximo potencial.
               </p>
             </li>
+            
             <li class="pilares__item">
               <div class="image-container">
                 <img src="assets/pilares/acessibility.svg" alt="Icon - Acessibilidade" />
@@ -194,12 +200,14 @@
             </li>
           </ul>
         </div>
-      </section>
-
+    </section>
+    
+    
       <section id="depoimentos">
         <h2>Depoimentos</h2>
         <div class="depoimentos-container">
           <!-- Depoimentos aleatórios -->
+
           <div class="depoimento">
             <p>
               "A plataforma EDU tem sido um marco na educação de nossa escola,
@@ -207,6 +215,7 @@
             </p>
             <span>★★★★★ - Professor João</span>
           </div>
+
           <div class="depoimento">
             <p>
               "Usamos o EDU em nosso cotidiano e notamos o avanço significativo
@@ -216,28 +225,22 @@
           </div>
         </div>
 
-        <!-- Formulário para adicionar depoimento -->
-        <div class="novo-depoimento">
-          <h3>Envie seu depoimento</h3>
-          <form id="depoimentoForm">
-            <textarea
-              placeholder="Escreva seu depoimento..."
-              required
-            ></textarea>
-            <label for="estrelas">Avaliação:</label>
-            <input
-              type="number"
-              id="estrelas"
-              name="estrelas"
-              min="1"
-              max="5"
-              required
-            />
-            <button type="submit">Enviar</button>
-          </form>
-          <p id="sucessoMensagem"></p>
-        </div>
-      </section>
+
+  <!-- Formulário para adicionar depoimento -->
+  <div class="novo-depoimento">
+    <h3>Envie seu depoimento</h3>
+    <form id="depoimentoForm">
+      <textarea placeholder="Escreva seu depoimento..." required></textarea>
+      <label for="estrelas">Avaliação:</label>
+      <input type="number" id="estrelas" name="estrelas" min="1" max="5" required />
+      <button type="submit">Enviar</button>
+    </form>
+    <p id="sucessoMensagem"></p>
+  </div>
+
+
+</section>
+
 
       <section id="edu-nas-escolas">
         <h2>EDU nas escolas</h2>
@@ -269,17 +272,36 @@
         </div>
       </section>
     </main>
+
     <footer>
-      <div class="footer-content">
-        <p>Educar o mundo, elevar o mundo, através da educação.</p>
-        <ul>
-          <li><a href="#">Sobre</a></li>
-          <li><a href="#">Suporte</a></li>
-          <li><a href="#">Cursos</a></li>
-          <li><a href="#">Contato</a></li>
-        </ul>
-      </div>
-      <p>&copy; 2024 Educação Digital Unificada</p>
+      
+        <div class="footer-content">
+          <div class="footer-left">
+            <p>Educar o mundo, elevar o mundo, através da educação.</p>
+            <button class="image-bottom"><img src="assets/Group 20 (2).png" alt="Botão"></button>
+          </div>
+      
+          <div class="footer-right">
+            <ul>
+              <li><a href="#">Sobre</a></li>
+              <li><a href="#">Suporte</a></li>
+              <li><a href="#">Cursos</a></li>
+              <li><a href="#">Contato</a></li>
+            </ul>
+            <br>
+
+            <br class="footer-line"><br>
+
+          </div>
+        </div>
+        
+        <!-- Novo layout para a imagem e o parágrafo -->
+        <div class="footer-bottom">
+          <img src="assets/logo_edu 1 (2).png" alt="Logo EDU">
+          <p>&copy; 2024 Educação Digital Unificada</p>
+        </div>
+      
+      
     </footer>
   </body>
 
