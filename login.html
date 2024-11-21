@@ -1,0 +1,83 @@
+<!-- login.html -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <button id="backButton" onclick="history.back()">Voltar</button>
+        <img id="logo" src="logo.png" alt="Logo">
+    </header>
+
+    <main>
+        <div class="login-form">
+            <h3>Entrar</h3>
+            <form id="formLogin">
+                <label for="emailLogin">Email</label>
+                <input type="email" id="emailLogin" name="emailLogin" required>
+
+                <label for="senhaLogin">Senha</label>
+                <input type="password" id="senhaLogin" name="senhaLogin" required>
+
+                <button type="submit">Entrar</button>
+            </form>
+
+            <p>Não tem uma conta? <a href="cadastro.html">Cadastre-se</a></p>
+        </div>
+    </main>
+
+    <!-- Script JavaScript incluído diretamente aqui -->
+    <script>
+        // Função para realizar o login
+        document.getElementById('formLogin').addEventListener('submit', function (e) {
+            e.preventDefault();
+            
+            const emailLogin = document.getElementById('emailLogin').value;
+            const senhaLogin = document.getElementById('senhaLogin').value;
+
+            // Verificando se os dados de login correspondem aos cadastrados
+            const emailCadastradoAluno = localStorage.getItem('emailAluno');
+            const senhaCadastradaAluno = localStorage.getItem('senhaAluno');
+            
+            const emailCadastradoEmpresa = localStorage.getItem('emailEmpresa');
+            const senhaCadastradaEmpresa = localStorage.getItem('senhaEmpresa');
+            
+            // Verificando se os dados de login são válidos
+            if ((emailLogin === emailCadastradoAluno && senhaLogin === senhaCadastradaAluno) ||
+                (emailLogin === emailCadastradoEmpresa && senhaLogin === senhaCadastradaEmpresa)) {
+                
+                // Exibindo o pop-up de sucesso
+                alert('Login com Sucesso');
+                
+                // Redirecionando para a página de boas-vindas ou a próxima página
+                window.location.href = 'index.html'; // Altere para a página que desejar
+            } else {
+                // Exibindo mensagem de erro caso as credenciais estejam incorretas
+                alert('Email ou senha incorretos. Tente novamente.');
+            }
+        });
+        const loginForm = document.getElementById('loginForm');
+
+        loginForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            const username = document.getElementById('username').value;
+
+            if (username) {
+                // Salvar o nome do usuário no localStorage
+                localStorage.setItem('username', username);
+
+                // Redirecionar para a página index.html
+                window.location.href = 'index.html';
+            }
+        });
+    </script>
+</body>
+</html>
