@@ -45,27 +45,3 @@ setInterval(() => {
   showSlide(currentSlide + 1);
 }, 5000);
 
-
-// login.js
-
-// Verifica se o usuário está logado
-const username = localStorage.getItem("username");
-const actionsContainer = document.getElementById("actions-container");
-
-if (username) {
-  // Substitui o conteúdo da div "actions" pelo menu de perfil
-  actionsContainer.innerHTML = `
-    <div class="actions">
-      <span style="margin-right: 10px;">Bem-vindo, ${username}!</span>
-      <button id="logoutBtn" class="ancors__login">Sair</button>
-    </div>
-  `;
-
-  // Adiciona a funcionalidade de logout
-  const logoutBtn = document.getElementById("logoutBtn");
-  logoutBtn.addEventListener("click", () => {
-    // Remove o username do localStorage e recarrega a página
-    localStorage.removeItem("username");
-    window.location.reload();
-  });
-}

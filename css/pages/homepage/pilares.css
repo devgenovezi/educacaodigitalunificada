@@ -65,6 +65,7 @@
 .pilares .pilares__content .description {
   max-width: 56rem;
   margin: 0 auto 6rem;
+  font-family: var(--font-family);
 }
 
 .pilares .pilares__content ul {
@@ -76,7 +77,7 @@
 
 .pilares .pilares__content ul li {
   background-color: var(--white); 
-  background: linear-gradient(224deg, #46e191, #7ef9f1);
+  background: #20C7A3;
   backdrop-filter: blur(10px);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
