@@ -55,3 +55,21 @@ document.getElementById('formCadastroEmpresa').addEventListener('submit', functi
     // Redirecionando para a página de login após o cadastro
     window.location.href = 'login.html';
 });
+
+// Recupera o nome do usuário do localStorage (ou de uma API)
+document.addEventListener("DOMContentLoaded", () => {
+    const userName = localStorage.getItem("userName") || "Usuário"; // Altere aqui para obter o nome real.
+    document.getElementById("user-name").textContent = userName;
+  });
+  
+  // Exibe/oculta o menu suspenso
+  function toggleMenu() {
+    const menu = document.getElementById("dropdown-menu");
+    menu.classList.toggle("hidden");
+  }
+  
+  // Lógica para sair da conta
+  function logout() {
+    localStorage.removeItem("userName"); // Remover informações do usuário
+    window.location.href = "login.html"; // Redireciona para a tela de login
+  }
