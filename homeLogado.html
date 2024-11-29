@@ -34,12 +34,12 @@
       <nav class="navbar">
         <div class="navbar__content max-width mb-0">
           <div class="navbar__logo">
-            <a href="index.html"><img class="logo_edu" src="assets/logo_edu.svg" alt="Logo" /></a>
+            <img class="logo_edu" src="assets/logo_edu.svg" alt="Logo" />
           </div>
           <ul class="navbar__links">
             <li><a class="ancors" href="about.html">Sobre</a></li>
-            <li><a class="ancors" href="courses.html">Cursos</a></li>
-            <li><a class="ancors" href="contato.html">Contato</a></li>
+            <li><a class="ancors" href="#courses">Cursos</a></li>
+            <li><a class="ancors" href="#skills">Contato</a></li>
             <li
               style="
                 font-size: 2.5rem;
@@ -53,19 +53,69 @@
             <li id="actions-container">
               <!-- Aqui será inserido dinamicamente o menu de login ou o menu de perfil -->
               <div class="actions">
-                <input type="search" placeholder="Pesquisar" />
-                <button>Pesquisar</button>
-                <a href="login.html" class="ancors__login">Entrar</a>
-                <a href="cadastro.html" class="ancors__login">Cadastrar</a>
-              </div>
+                <div class="user-menu">
+                  <span class="user-icon" onclick="toggleMenu()">
+                    👤
+                  </span>
+                  <span id="user-name">Usuário</span>
+                  <div id="dropdown-menu" class="dropdown hidden">
+                    <a href="index.html" onclick="logout()">Sair da conta</a>
+                    <a href="perfil.html">Ver Perfil</a>
+                  </div>
             </li>
           </ul>
+
+          <style>
+            .user-menu {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+
+.user-icon {
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+#user-name {
+  font-weight: bold;
+}
+
+.dropdown {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  background: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-width: 150px;
+}
+
+.dropdown a {
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  transition: background 0.3s;
+}
+
+.dropdown a:hover {
+  background: #f0f0f0;
+}
+
+.hidden {
+  display: none;
+}
+          </style>
 
           <div class="navbar__mobile">
             <img src="assets/menu.svg" alt="menu" class="burguer" />
             <ul class="mobile__links">
               <li><a class="ancors" href="about.html">Sobre</a></li>
-              <li><a class="ancors" href="courses.html">Cursos</a></li>
+              <li><a class="ancors" href="#">Cursos</a></li>
               <li><a class="ancors" href="contato.html">Contato</a></li>
             </ul>
           </div>
@@ -270,14 +320,14 @@
           </div>
         </div>
       </section>
-    
+
       <section class="waves">
         <img src="assets/Stacked Wave 1.png" alt="">
         <style>
           .waves img{
             width: 100%;
             height: auto;
-            margin-bottom: -1rem;
+            margin-bottom: 0;
           }
         </style>
       </section>

@@ -109,6 +109,36 @@
 .hidden {
   display: none;
 }
+
+.custom-section {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f9f9f9; /* Cor de fundo, opcional */
+  margin-top: 5rem;
+}
+
+.custom-section h1 {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  margin: 0;
+  font-size: 2rem;
+  color: #333; /* Cor do texto */
+}
+
+.central-image {
+  margin-top: 4rem; /* Para somar com a altura do título */
+  max-width: 100%;
+  height: auto;
+}
+
+
+
           </style>
 
           <div class="navbar__mobile">
@@ -123,222 +153,38 @@
       </nav>
     </header>
     <main>
-      <section id="carousel">
-        <div class="carousel-container">
-          <div class="carousel-slide">
-            <img src="assets/slide1.png" class="desktop-img" alt="Imagem 1" />
-            <img src="assets/slide1.png" class="mobile-img" alt="Imagem 1" />
-            <a href="outra-pagina.html" class="btn-saiba-mais">Saiba Mais</a>
-          </div>
-          <div class="carousel-slide">
-            <img src="assets/slide1.png" class="desktop-img" alt="Imagem 2" />
-            <img src="assets/slide1.png" class="mobile-img" alt="Imagem 2" />
-            <a href="outra-pagina.html" class="btn-saiba-mais">Saiba Mais</a>
-          </div>
-          <div class="carousel-slide">
-            <img src="assets/slide1.png" class="desktop-img" alt="Imagem 2" />
-            <img src="assets/slide1.png" class="mobile-img" alt="Imagem 2" />
-            <a href="outra-pagina.html" class="btn-saiba-mais">Saiba Mais</a>
-          </div>
-          <div class="carousel-slide">
-            <img src="assets/slide1.png" class="desktop-img" alt="Imagem 2" />
-            <img src="assets/slide1.png" class="mobile-img" alt="Imagem 2" />
-            <a href="outra-pagina.html" class="btn-saiba-mais">Saiba Mais</a>
-          </div>
-          <!-- Adicione mais slides aqui -->
-        </div>
-        <button class="prev">❮</button>
-        <button class="next">❯</button>
+
+      <section class="custom-section">
+        <h1>3º ano B - Informática Para Internet</h1>
+        <img src="assets/home/Matérias.png" alt="Descrição da imagem" class="central-image">
       </section>
-
-      <section id="ecossistema-edu" class="mb-4">
-        <div class="container-ecosystem">
-          <div class="ecosystem-text">
-            <h2 class="mb-1">Ecossistema Edu</h2>
-            <p>
-              Somos um ecossistema inovador que incentiva novos ecossistemas
-              inovadores.
-            </p>
-            <p>
-              Partimos da mesma premissa que o grande educador Paulo Freire,
-              “Educação não transforma o mundo. Educação muda as pessoas.
-              Pessoas transformam o mundo”.
-            </p>
-            <p>
-              Na prática, isso significa que nossa plataforma propõe uma
-              tecnologia inovadora, inclusiva e simplificada para mudar as
-              pessoas; Fazer com que elas gostem de aprender, a educação não
-              deveria ser algo maçante para ninguém. Com os recursos do nosso
-              site, podemos transformar a educação no Brasil e potencializar
-              ainda mais nossos jovens.
-            </p>
-            <p class="highlight">
-              EDUCAÇÃO - INOVAÇÃO - TECNOLOGIA - ACESSIBILIDADE
-            </p>
-          </div>
-          <div class="ecosystem-image">
-            <img
-              src="assets/home/Ecossistema_teste.gif"
-              alt="Imagem do Ecossistema EDU"
-            />
-          </div>
-        </div>
+      <section class="custom-section">
+        <h1 class="h1-center">Cronograma</h1>
+        <img src="assets/home/Calendário.png" alt="Descrição da imagem" class="central-image">
       </section>
-
-      <section id="pilares" class="pilares">
-        
-        <div class="pilares__content max-width">
-          
-          <!-- Introdução com Estilos Específicos -->
-          <div class="pilares-introducao">
-            <h3 class="pilares-introducao__titulo">PILARES EDU</h3>
-            <h1 class="pilares-introducao__subtitulo">Visando o futuro</h1>
-            <p class="pilares-introducao__descricao">Construindo o Amanhã: Nossos Fundamentos em Inovação, Conexão, Inteligência e Eficiência</p>
-          </div>
-          
-          <!-- Seção de Cards Existente -->
-          <ul>
-            <li class="pilares__item">
-              <div class="image-container">
-                <img src="assets/home/pilares/educacao.svg" alt="Icon - Edu" />
-              </div>
-              <h3>Educação</h3>
-              <p>
-                Na Edu, a educação é um valor essencial. Nosso propósito é
-                tornar o ensino acessível para todos, quebrando barreiras e
-                facilitando o aprendizado através da inovação, para que cada
-                pessoa possa alcançar seu máximo potencial.
-              </p>
-            </li>
-            
-            <li class="pilares__item">
-              <div class="image-container">
-                <img src="assets/home/pilares/tecnology.svg" alt="Icon - Tecnologia" />
-              </div>
-              <h3>Tecnologia</h3>
-              <p>
-                Na Edu, a educação é um valor essencial. Nosso propósito é
-                tornar o ensino acessível para todos, quebrando barreiras e
-                facilitando o aprendizado através da inovação, para que cada
-                pessoa possa alcançar seu máximo potencial.
-              </p>
-            </li>
-    
-            <li class="pilares__item">
-              <div class="image-container">
-                <img src="assets/home/pilares/ino.svg" alt="Icon - Inovação" />
-              </div>
-              <h3>Inovação</h3>
-              <p>
-                Na Edu, a educação é um valor essencial. Nosso propósito é
-                tornar o ensino acessível para todos, quebrando barreiras e
-                facilitando o aprendizado através da inovação, para que cada
-                pessoa possa alcançar seu máximo potencial.
-              </p>
-            </li>
-            
-            <li class="pilares__item">
-              <div class="image-container">
-                <img src="assets/home/pilares/acessibility.svg" alt="Icon - Acessibilidade" />
-              </div>
-              <h3>Acessibilidade</h3>
-              <p>
-                Na Edu, a educação é um valor essencial. Nosso propósito é
-                tornar o ensino acessível para todos, quebrando barreiras e
-                facilitando o aprendizado através da inovação, para que cada
-                pessoa possa alcançar seu máximo potencial.
-              </p>
-            </li>
-          </ul>
-        </div>
-    </section>
-    
-      <section id="depoimentos">
-        <h2>Depoimentos</h2>
-        <div class="depoimentos-container">
-          <!-- Depoimentos aleatórios -->
-
-          <div class="depoimento">
-            <p>
-              "A plataforma EDU tem sido um marco na educação de nossa escola,
-              sendo essencial para nosso desenvolvimento."
-            </p>
-            <span>★★★★★ - Professor João</span>
-          </div>
-
-          <div class="depoimento">
-            <p>
-              "Usamos o EDU em nosso cotidiano e notamos o avanço significativo
-              na interação com os alunos."
-            </p>
-            <span>★★★★☆ - Professora Maria</span>
-          </div>
-        </div>
-
-
-  <!-- Formulário para adicionar depoimento -->
-  <div class="novo-depoimento">
-    <h3>Envie seu depoimento</h3>
-    <form id="depoimentoForm">
-      <textarea placeholder="Escreva seu depoimento..." required></textarea>
-      <label for="estrelas">Avaliação:</label>
-      <input type="number" id="estrelas" name="estrelas" min="1" max="5" required />
-      <button type="submit">Enviar</button>
-    </form>
-    <p id="sucessoMensagem"></p>
-  </div>
-
-
-    </section>
-
-      <section id="edu-nas-escolas">
-        <h2>EDU nas escolas</h2>
-        <div class="pesquisa-campo">
-          <div class="pesquisa">
-            <h3>Pesquisa de campo</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-              quis ultricies tortor, eu vulputate tellus.
-            </p>
-            <span>Professor Paulo Fonseca</span>
-          </div>
-          <div class="pesquisa">
-            <h3>Pesquisa de campo</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-              quis ultricies tortor, eu vulputate tellus.
-            </p>
-            <span>Professora Dêa Ana Rosa</span>
-          </div>
-          <div class="pesquisa">
-            <h3>Pesquisa de campo</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-              quis ultricies tortor, eu vulputate tellus.
-            </p>
-            <span>Professor Guilherme</span>
-          </div>
-        </div>
+      <section class="custom-section">
+        <h1 class="h1-center">Avisos</h1>
+        <img src="assets/home/Frame 195.png" alt="Descrição da imagem" class="central-image">
       </section>
-
-      <section class="waves">
-        <img src="assets/Stacked Wave 1.png" alt="">
-        <style>
-          .waves img{
-            width: 100%;
-            height: auto;
-            margin-bottom: 0;
-          }
-        </style>
-      </section>
-
+      
     </main>
+
+    <section class="waves">
+      <img src="assets/Stacked Wave 1.png" alt="">
+      <style>
+        .waves img{
+          width: 100%;
+          height: auto;
+          margin-bottom: -1rem;
+        }
+      </style>
+    </section>
 
     <footer>
       <div class="footer-content">
         <div class="footer-left">
           <p>Educar o mundo, elevar o mundo, através da educação.</p>
-          <button class="image-bottom">Feedback<img src="assets/" alt="Botão"></button>
+          <button class="image-bottom">Feedback</button>
         </div>
     
         <div class="footer-right">
@@ -360,7 +206,7 @@
           
         </div>
       </div>
-      
+
       <!-- Novo layout para a imagem e o parágrafo -->
       <div class="footer-bottom">
         <img src="assets/logo_flor.svg" alt="Logo EDU">
